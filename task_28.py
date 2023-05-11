@@ -17,3 +17,14 @@ def res_sum(a, b):
     return 1 +  res_sum(a, b -1)
 
 print(f"{num_A} + {num_B} = {res_sum(num_A, num_B)}")
+
+
+def sum(a, b):
+    if a == 0:
+        return b
+    elif b == 0:
+        return a
+    return sum(a + 1, b -1)
+
+
+print(f"{num_A} + {num_B} = {res_sum(num_A, num_B)}")
